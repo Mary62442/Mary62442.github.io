@@ -8,19 +8,19 @@ const GetToKnowMe = () => {
     <MainContainer>
       <LettersContainer>
         <div>
-          <H1 xl noMargin>
+          <H1 color={theme.secondaryColor} xl noMargin>
             M
           </H1>
-          <H1 xl noMargin>
+          <H1 color={theme.secondaryColor} xl noMargin>
             a
           </H1>
-          <H1 xl noMargin>
+          <H1 color={theme.secondaryColor} xl noMargin>
             R
           </H1>
-          <H1 xl noMargin>
+          <H1 color={theme.secondaryColor} xl noMargin>
             I
           </H1>
-          <H1 xl noMargin>
+          <H1 color={theme.secondaryColor} xl noMargin>
             A
           </H1>
         </div>
@@ -99,7 +99,6 @@ const LettersContainer = styled.div`
     width: 100%;
     > h1 {
       width: 30px;
-      color: #8d828f;
       &:first-of-type {
         text-align: left;
       }

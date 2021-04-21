@@ -70,26 +70,26 @@ const Gradient1 = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
-  background: linear-gradient(180deg, #1f1d1f 0%, #291d5d 100%);
+  background: ${(props) => props.theme.gradientBlueShades};
   top: 0;
   left: 0;
   z-index: -1;
-  animation: gradient1 10s linear infinite;
+  animation: gradient1 15s linear infinite;
 `;
 
 const Gradient2 = styled.div`
-  background: linear-gradient(359.56deg, #1a237e -26.61%, #311b92 96.59%);
+  background: ${(props) => props.theme.gradientWarm};
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   z-index: -2;
-  animation: gradient2 10s linear infinite;
+  animation: gradient2 15s linear infinite;
 `;
 
 const Gradient3 = styled.div`
-  background: linear-gradient(180deg, #006064 0%, #37474f 100%);
+  background: ${(props) => props.theme.gradientCool};
   position: absolute;
   height: 100%;
   width: 100%;
@@ -114,9 +114,10 @@ const MariaBurlando = styled.p`
 const Role = styled.p`
   text-align: right;
   color: white;
-  color: ${(props) => props.theme.lavander};
+  color: ${(props) => props.theme.white};
   animation: appear 1s ease-in-out forwards;
-
+  margin: 0;
+  margin-top: -1rem;
   @keyframes slideIn {
     0% {
       opacity: 0;

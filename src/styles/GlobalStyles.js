@@ -1,26 +1,48 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+export default createGlobalStyle`
+body {
+    color:#323232;
+    overflow-x:hidden;
+    padding:0;
+    margin:0;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight:600;
+  }
+
+  .Paragraph__component {
+    line-height:170%;
+    font-size:18px;
+  }
+  
+  
   * {
-    scroll-behavior: smooth;
+    box-sizing: border-box;
+    background-position:center;
+    background-size:cover;
+    padding:0;
+    margin:0;
   }
-  body {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
-    Helvetica, Arial, 'Lucida Grande', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+
+  html {
+    overscroll-behavior-y: none;
+    min-height: 100vh;
   }
+
   a {
-    text-decoration: none;
-    color: #108db8;
-    font-weight: bold;
+    text-decoration:none;
   }
 
-  img {
-    max-width: 100%;
+  
+
+  @font-face {
+    font-family: 'Open Sans', sans-serif;
   }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Open Sans', sans-serif;
 `;
-
-export default GlobalStyle;

@@ -4,9 +4,8 @@ import React, { Component } from "react";
 
 export default {
   getSiteProps: async () => ({
-    title: "ProActivity",
-    text:
-      "We provide extraordinary value to companies through a robust team of experienced IT Professionals specialized in the development of enterprise-level software solutions.",
+    title: "Maria Burlando",
+    text: "Developer. Designer. Dreamer",
   }),
   Document: class CustomHtml extends Component {
     render() {
@@ -20,10 +19,7 @@ export default {
               content="width=device-width, initial-scale=1"
             />
             <title>Maria Burlando</title>
-            <meta
-              name="description"
-              content="We provide extraordinary value to companies through a robust team of experienced IT Professionals specialized in the development of enterprise-level software solutions."
-            />
+            <meta name="description" content="Developer. Designer. Dreamer" />
 
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link

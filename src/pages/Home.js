@@ -11,6 +11,6 @@ export default () => (
     <HomeLanding />
     <GetToKnowMe />
     <Acronym />
-    <PoetrySection />
+    {/* <PoetrySection /> */}
   </div>
 );
