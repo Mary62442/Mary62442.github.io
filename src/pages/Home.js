@@ -4,6 +4,7 @@ import {
   GetToKnowMe,
   Acronym,
   PoetrySection,
+  ToCome,
 } from "../components";
 
 export default () => (
@@ -11,6 +12,7 @@ export default () => (
     <HomeLanding />
     <GetToKnowMe />
     <Acronym />
+    <ToCome />
     {/* <PoetrySection /> */}
   </div>
 );

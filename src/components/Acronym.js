@@ -83,16 +83,20 @@ const MainContainer = styled.div`
   width: 100%;
   position: relative;
   text-align: center;
-  height: 90vh;
-
+  height: 650px;
   text-align: center;
   background-color: white;
 `;
 
 const LettersContainer = styled.div`
-  padding-top: 300px;
+  padding-top: 200px;
   margin: 0 auto;
-  width: 400px;
+  width: 250px;
+
+  @media (min-width: 600px) {
+    padding-top: 300px;
+    width: 400px;
+  }
   > div {
     display: flex;
     justify-content: space-between;

@@ -64,6 +64,7 @@ const MainContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 12px;
 `;
 
 const Gradient1 = styled.div`
@@ -107,17 +108,26 @@ const Star = styled.div`
 const MariaBurlando = styled.p`
   font-family: "Italiana", serif;
   color: white;
-  font-size: 150px;
   animation: slideIn 1s ease-in-out forwards;
+  font-size: 70px;
+  text-align: center;
+
+  @media (min-width: 600px) {
+    font-size: 150px;
+  }
 `;
 
 const Role = styled.p`
-  text-align: right;
+  text-align: center;
   color: white;
   color: ${(props) => props.theme.white};
   animation: appear 1s ease-in-out forwards;
   margin: 0;
-  margin-top: -1rem;
+
+  @media (min-width: 600px) {
+    text-align: right;
+    margin-top: -1rem;
+  }
   @keyframes slideIn {
     0% {
       opacity: 0;

@@ -18,16 +18,13 @@ const GetToKnowMe = () => {
           I'm a web developer and designer always looking for that bit of spice
           to brighten up your ideas.
         </P>
-        <P small white>
+        <P small white padding="0 0 24px 0 ">
           I love experimenting and I love creating beautiful things.
         </P>
-        <P padding="24px 0 0 0 " xSmall white>
-          If you'd like to know more, please refer to my CV below :)
-        </P>
-        <br />
+
         <a href="/Maria_Burlando_CV.pdf" download>
           <Button transparent margin noStretch>
-            Download CV
+            Download my CV
           </Button>
         </a>
       </GetToKnowMeText>
@@ -40,8 +37,15 @@ const MainContainer = styled.div`
   margin-top: 100vh;
   position: relative;
   text-align: center;
-  background: linear-gradient(to top, rgba(0, 26, 50, 1), rgba(0, 26, 50, 0));
+  background: linear-gradient(
+    to top,
+    rgba(0, 26, 50, 1),
+    rgba(0, 26, 50, 1) 40%,
+    rgba(0, 26, 50, 0)
+  );
   z-index: 1;
+  padding: 0 12px;
+  box-sizing: border-box;
 
   &:before {
     content: "";
@@ -50,14 +54,27 @@ const MainContainer = styled.div`
     height: 0px;
     top: 100%;
     left: 0;
-    border-top: 200px solid rgba(0, 26, 50, 1);
+    border-top: 100px solid rgba(0, 26, 50, 1);
     border-left: 50vw solid rgba(0, 26, 50, 0);
     border-right: 50vw solid rgba(0, 26, 50, 0);
+  }
+
+  @media (min-width: 600px) {
+    background: linear-gradient(to top, rgba(0, 26, 50, 1), rgba(0, 26, 50, 0));
+    &:before {
+      border-top: 200px solid rgba(0, 26, 50, 1);
+      border-left: 50vw solid rgba(0, 26, 50, 0);
+      border-right: 50vw solid rgba(0, 26, 50, 0);
+    }
   }
 `;
 
 const MariaOutline = styled.img`
-  width: 60vw;
+  width: 100%;
+
+  @media (min-width: 600px) {
+    width: 60vw;
+  }
 `;
 
 const GetToKnowMeText = styled.div`
@@ -67,8 +84,12 @@ const GetToKnowMeText = styled.div`
   justify-content: center;
   flex-direction: column;
   padding: 100px 0 20px 0;
-  width: 40vw;
+  width: 100%;
   color: white;
+
+  @media (min-width: 600px) {
+    width: 40vw;
+  }
 `;
 
 export default GetToKnowMe;
