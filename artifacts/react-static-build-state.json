@@ -1,0 +1,65 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "react-static-plugin-styled-components"
+    ],
+    [
+      "/Users/mariaburlando/Desktop/maria_website/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      {
+        "location": "/Users/mariaburlando/Desktop/maria_website/src/pages"
+      }
+    ],
+    "/Users/mariaburlando/Desktop/maria_website/node_modules/react-static-plugin-reach-router/browser.api.js",
+    "/Users/mariaburlando/Desktop/maria_website/node_modules/react-static-plugin-sitemap/dist/node.api.js",
+    "/Users/mariaburlando/Desktop/maria_website"
+  ],
+  "paths": {
+    "ROOT": "/Users/mariaburlando/Desktop/maria_website",
+    "SRC": "/Users/mariaburlando/Desktop/maria_website/src",
+    "DIST": "/Users/mariaburlando/Desktop/maria_website/dist",
+    "ASSETS": "/Users/mariaburlando/Desktop/maria_website/dist",
+    "PLUGINS": "/Users/mariaburlando/Desktop/maria_website/plugins",
+    "TEMP": "/Users/mariaburlando/Desktop/maria_website/tmp",
+    "ARTIFACTS": "/Users/mariaburlando/Desktop/maria_website/artifacts",
+    "PUBLIC": "/Users/mariaburlando/Desktop/maria_website/public",
+    "NODE_MODULES": "/Users/mariaburlando/Desktop/maria_website/node_modules",
+    "EXCLUDE_MODULES": "/Users/mariaburlando/Desktop/maria_website/node_modules",
+    "PACKAGE": "/Users/mariaburlando/Desktop/maria_website/package.json",
+    "HTML_TEMPLATE": "/Users/mariaburlando/Desktop/maria_website/dist/index.html",
+    "STATIC_DATA": "/Users/mariaburlando/Desktop/maria_website/dist/staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}

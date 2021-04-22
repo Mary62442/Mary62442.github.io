@@ -1,6 +1,9 @@
 export default {
   dark: "#293176",
+  purple: "#53549E",
   lavander: "#D1CAFF",
+  lavanderDark: "#A5A1F3",
+  purpleLight: "#7C79C8",
   white: "#ffffff",
   secondaryColor: "#00C895",
 

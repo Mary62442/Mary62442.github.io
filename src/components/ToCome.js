@@ -7,11 +7,7 @@ const ToCome = () => {
   return (
     <MainContainer>
       <Holder>
-        <Bubble1></Bubble1>
-        <Bubble2></Bubble2>
-        <Bubble3></Bubble3>
-        <Bubble4></Bubble4>
-        <H1 color={theme.dark}>More content to come soon...</H1>
+        <H1 color={theme.white}>More content to come soon...</H1>
       </Holder>
     </MainContainer>
   );
@@ -21,8 +17,7 @@ const MainContainer = styled.div`
   width: 100%;
   position: relative;
   height: 300px;
-
-  background-color: white;
+  background-color: ${(props) => props.theme.dark};
   padding: 0 12px;
 `;
 

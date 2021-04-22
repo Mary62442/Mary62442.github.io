@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import styled, { css } from "styled-components";
 import theme from "../styles/theme";
+import { Fade } from "react-reveal";
 
 const HomeLanding = () => {
   const [stars, setStars] = useState(null);
@@ -48,8 +49,12 @@ const HomeLanding = () => {
       <Gradient3 />
       {stars}
       <div>
-        <MariaBurlando>Maria Burlando</MariaBurlando>
-        <Role>/DEVELOPER /DESIGNER /DREAMER</Role>
+        <Fade top duration={1000}>
+          <MariaBurlando>Maria Burlando</MariaBurlando>
+        </Fade>
+        <Fade delay={700} duration={2000} bottom>
+          <Role>/DEVELOPER /DESIGNER /DREAMER</Role>
+        </Fade>
       </div>
     </MainContainer>
   );
@@ -108,8 +113,7 @@ const Star = styled.div`
 const MariaBurlando = styled.p`
   font-family: "Italiana", serif;
   color: white;
-  animation: slideIn 1s ease-in-out forwards;
-  font-size: 70px;
+  font-size: 80px;
   text-align: center;
 
   @media (min-width: 600px) {

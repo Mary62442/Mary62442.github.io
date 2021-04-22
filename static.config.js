@@ -23,7 +23,7 @@ export default {
 
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link
-              href="https://fonts.googleapis.com/css2?family=Italiana&family=Open+Sans&family=Unica+One&display=swap"
+              href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins&family=Unica+One&display=swap"
               rel="stylesheet"
             />
             <meta

@@ -5,28 +5,34 @@ import H1 from "./typography/H1";
 import P from "./typography/P";
 import Button from "./Button";
 import H4 from "./typography/H4";
+import { Fade } from "react-reveal";
 
 const GetToKnowMe = () => {
   return (
     <MainContainer>
       <MariaOutline src="/maria_outline.png" />
       <GetToKnowMeText>
-        <H1 color={theme.lavander} xl white>
-          Hello everybody!
-        </H1>
-        <P small white>
-          I'm a web developer and designer always looking for that bit of spice
-          to brighten up your ideas.
-        </P>
-        <P small white padding="0 0 24px 0 ">
-          I love experimenting and I love creating beautiful things.
-        </P>
-
-        <a href="/Maria_Burlando_CV.pdf" download>
-          <Button transparent margin noStretch>
-            Download my CV
-          </Button>
-        </a>
+        <Fade top>
+          <H1 color={theme.lavander} xl white>
+            Hello everybody!
+          </H1>
+        </Fade>
+        <Fade top delay={500} distance={"20px"}>
+          <P small white>
+            I'm a web developer and designer always looking for that bit of
+            spice to brighten up your ideas.
+          </P>
+          <P small white padding="0 0 24px 0 ">
+            I love experimenting and I love creating beautiful things.
+          </P>
+        </Fade>
+        <Fade bottom delay={700} distance={"20px"}>
+          <a href="/Maria_Burlando_CV.pdf" download>
+            <Button transparent margin noStretch>
+              Download my CV
+            </Button>
+          </a>
+        </Fade>
       </GetToKnowMeText>
     </MainContainer>
   );
@@ -39,9 +45,9 @@ const MainContainer = styled.div`
   text-align: center;
   background: linear-gradient(
     to top,
-    rgba(0, 26, 50, 1),
-    rgba(0, 26, 50, 1) 40%,
-    rgba(0, 26, 50, 0)
+    rgba(41, 49, 118, 1),
+    rgba(41, 49, 118, 1) 40%,
+    rgba(41, 49, 118, 0)
   );
   z-index: 1;
   padding: 0 12px;
@@ -52,19 +58,36 @@ const MainContainer = styled.div`
     position: absolute;
     width: 0px;
     height: 0px;
-    top: 100%;
+    top: calc(100% - 1px);
     left: 0;
-    border-top: 100px solid rgba(0, 26, 50, 1);
-    border-left: 50vw solid rgba(0, 26, 50, 0);
-    border-right: 50vw solid rgba(0, 26, 50, 0);
+    border-top: 100px solid rgba(41, 49, 118, 1);
+    border-left: 25vw solid rgba(41, 49, 118, 0);
+    border-right: 75vw solid rgba(41, 49, 118, 0);
   }
 
-  @media (min-width: 600px) {
-    background: linear-gradient(to top, rgba(0, 26, 50, 1), rgba(0, 26, 50, 0));
+  @media (min-width: 600px) and (max-width: 1000px) {
+    background: linear-gradient(
+      to top,
+      rgba(41, 49, 118, 1),
+      rgba(41, 49, 118, 0)
+    );
     &:before {
-      border-top: 200px solid rgba(0, 26, 50, 1);
-      border-left: 50vw solid rgba(0, 26, 50, 0);
-      border-right: 50vw solid rgba(0, 26, 50, 0);
+      border-top: 200px solid rgba(41, 49, 118, 1);
+      border-left: 35vw solid rgba(41, 49, 118, 0);
+      border-right: 65vw solid rgba(41, 49, 118, 0);
+    }
+  }
+
+  @media (min-width: 1001px) {
+    background: linear-gradient(
+      to top,
+      rgba(41, 49, 118, 1),
+      rgba(41, 49, 118, 0)
+    );
+    &:before {
+      border-top: 200px solid rgba(41, 49, 118, 1);
+      border-left: 40vw solid rgba(41, 49, 118, 0);
+      border-right: 60vw solid rgba(41, 49, 118, 0);
     }
   }
 `;
@@ -88,7 +111,7 @@ const GetToKnowMeText = styled.div`
   color: white;
 
   @media (min-width: 600px) {
-    width: 40vw;
+    width: 50vw;
   }
 `;
 
