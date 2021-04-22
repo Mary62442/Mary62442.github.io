@@ -26,11 +26,8 @@ export default {
               href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins&family=Unica+One&display=swap"
               rel="stylesheet"
             />
-            <meta
-              property="og:image"
-              content="http://localhost:3000/icon.png"
-            />
-            <link rel="icon" href="/icon.png" />
+
+            <link rel="icon" href="/svg/logo-white.svg" />
           </Head>
           <Body>{children}</Body>
         </Html>

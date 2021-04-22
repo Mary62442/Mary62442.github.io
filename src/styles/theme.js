@@ -6,6 +6,7 @@ export default {
   purpleLight: "#7C79C8",
   white: "#ffffff",
   secondaryColor: "#00C895",
+  secondaryColorLight: "#C8FCEA",
 
   gradientWarm:
     "linear-gradient(to bottom left, #293176, #893b82, #cf5079, #fb7d66, #ffb95a, #f9f871)",
