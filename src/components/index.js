@@ -13,3 +13,4 @@ export { default as GetToKnowMe } from "./GetToKnowMe";
 export { default as Acronym } from "./Acronym";
 export { default as PoetrySection } from "./PoetrySection";
 export { default as ToCome } from "./ToCome";
+export { default as ParallaxSection } from "./ParallaxSection";

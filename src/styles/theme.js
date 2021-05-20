@@ -1,12 +1,15 @@
 export default {
-  dark: "#293176",
-  purple: "#53549E",
-  lavander: "#D1CAFF",
-  lavanderDark: "#A5A1F3",
-  purpleLight: "#7C79C8",
+  dark: "#0F1E30",
+  darkLighter: "#004861",
+  lightGrey: "#A9AFBB",
+  purple: "#343953",
+  lavander: "#BF93B8",
+  lavanderDark: "#8D7498",
+  purpleLight: "#5E5676",
   white: "#ffffff",
-  secondaryColor: "#00C895",
-  secondaryColorLight: "#C8FCEA",
+  secondaryColor: "#02A888",
+  secondaryColorLight: "#87D57B",
+  yellow: "#F9F871",
 
   gradientWarm:
     "linear-gradient(to bottom left, #293176, #893b82, #cf5079, #fb7d66, #ffb95a, #f9f871)",

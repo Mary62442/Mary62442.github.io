@@ -22,7 +22,6 @@ const HomeLanding = () => {
       let revOrNot = Math.floor(Math.random() * 2 + 1);
       let rev = "normal";
       if (revOrNot == 1) rev = "reverse";
-      console.log(i);
       starsToAdd.push(
         <Star
           style={{
@@ -44,9 +43,6 @@ const HomeLanding = () => {
 
   return (
     <MainContainer>
-      <Gradient1 />
-      <Gradient2 />
-      <Gradient3 />
       {stars}
       <div>
         <Fade top duration={1000}>
@@ -70,6 +66,10 @@ const MainContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 12px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url("/lighthouse.jpg");
+  background-size: 150%;
+  background-position: top left;
 `;
 
 const Gradient1 = styled.div`

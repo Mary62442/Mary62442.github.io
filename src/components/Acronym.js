@@ -9,14 +9,6 @@ import { H4, H1, P } from "./";
 const Acronym = () => {
   return (
     <MainContainer>
-      <Bubble1 bottom={"40%"} right={"30%"}></Bubble1>
-      <Bubble1 bottom={"10%"} right={"10%"}></Bubble1>
-      <Bubble2 bottom={"30%"} right={"-40px"}></Bubble2>
-      <Bubble2 bottom={"-30px"} right={"20%"}></Bubble2>
-      <Bubble3 bottom={"40px"} left={"20%"}></Bubble3>
-      <Bubble3 bottom={"20%"} left={"10%"}></Bubble3>
-      <Bubble4 bottom={"20%"} left={"20%"}></Bubble4>
-      <Bubble4 bottom={"10%"} left={"-40px"}></Bubble4>
       <LettersContainer>
         <Fade top cascade>
           <AdjectiveBlock>
@@ -81,7 +73,11 @@ const MainContainer = styled.div`
   text-align: center;
   //height: 650px;
   text-align: center;
-  background-color: white;
+  background: linear-gradient(
+    to bottom,
+    ${(props) => props.theme.lightGrey},
+    white
+  );
   overflow: hidden;
 `;
 
@@ -119,61 +115,6 @@ const NameLetter = styled.h1`
   font-family: "Unica One";
   border-radius: 8px;
   margin-right: 12px;
-`;
-
-const Bubble1 = styled.div`
-  position: absolute;
-  bottom: ${(props) => props.bottom};
-  right: ${(props) => props.right};
-  width: 100px;
-  border-radius: 50%;
-  height: 100px;
-  background-color: rgba(0, 200, 149, 0.2);
-  @media (min-width: 800px) {
-    height: 200px;
-    width: 200px;
-  }
-`;
-const Bubble2 = styled.div`
-  position: absolute;
-  bottom: ${(props) => props.bottom};
-  right: ${(props) => props.right};
-  width: 150px;
-  border-radius: 50%;
-  height: 150px;
-  background-color: rgba(95, 95, 171, 0.2);
-  @media (min-width: 800px) {
-    height: 300px;
-    width: 300px;
-  }
-`;
-
-const Bubble3 = styled.div`
-  position: absolute;
-  bottom: ${(props) => props.bottom};
-  left: ${(props) => props.left};
-  width: 50px;
-  border-radius: 50%;
-  height: 50px;
-  background-color: rgba(255, 185, 90, 0.2);
-  @media (min-width: 800px) {
-    height: 100px;
-    width: 100px;
-  }
-`;
-
-const Bubble4 = styled.div`
-  position: absolute;
-  bottom: ${(props) => props.bottom};
-  left: ${(props) => props.left};
-  width: 125px;
-  border-radius: 50%;
-  height: 125px;
-  background-color: rgba(83, 84, 158, 0.1);
-  @media (min-width: 800px) {
-    height: 250px;
-    width: 250px;
-  }
 `;
 
 export default Acronym;

@@ -45,9 +45,9 @@ const MainContainer = styled.div`
   text-align: center;
   background: linear-gradient(
     to top,
-    rgba(41, 49, 118, 1),
-    rgba(41, 49, 118, 1) 40%,
-    rgba(41, 49, 118, 0)
+    rgba(15, 30, 48, 1),
+    rgba(15, 30, 48, 1) 40%,
+    rgba(15, 30, 48, 0)
   );
   z-index: 1;
   padding: 0 12px;
@@ -60,34 +60,34 @@ const MainContainer = styled.div`
     height: 0px;
     top: calc(100% - 1px);
     left: 0;
-    border-top: 100px solid rgba(41, 49, 118, 1);
-    border-left: 25vw solid rgba(41, 49, 118, 0);
-    border-right: 75vw solid rgba(41, 49, 118, 0);
+    border-top: 100px solid rgba(15, 30, 48, 1);
+    border-left: 25vw solid rgba(15, 30, 48, 0);
+    border-right: 75vw solid rgba(15, 30, 48, 0);
   }
 
   @media (min-width: 600px) and (max-width: 1000px) {
     background: linear-gradient(
       to top,
-      rgba(41, 49, 118, 1),
-      rgba(41, 49, 118, 0)
+      rgba(15, 30, 48, 1),
+      rgba(15, 30, 48, 0)
     );
     &:before {
-      border-top: 200px solid rgba(41, 49, 118, 1);
-      border-left: 35vw solid rgba(41, 49, 118, 0);
-      border-right: 65vw solid rgba(41, 49, 118, 0);
+      border-top: 200px solid rgba(15, 30, 48, 1);
+      border-left: 35vw solid rgba(15, 30, 48, 0);
+      border-right: 65vw solid rgba(15, 30, 48, 0);
     }
   }
 
   @media (min-width: 1001px) {
     background: linear-gradient(
       to top,
-      rgba(41, 49, 118, 1),
-      rgba(41, 49, 118, 0)
+      rgba(15, 30, 48, 1),
+      rgba(15, 30, 48, 0)
     );
     &:before {
-      border-top: 200px solid rgba(41, 49, 118, 1);
-      border-left: 40vw solid rgba(41, 49, 118, 0);
-      border-right: 60vw solid rgba(41, 49, 118, 0);
+      border-top: 200px solid rgba(15, 30, 48, 1);
+      border-left: 40vw solid rgba(15, 30, 48, 0);
+      border-right: 60vw solid rgba(15, 30, 48, 0);
     }
   }
 `;

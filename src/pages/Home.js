@@ -1,18 +1,24 @@
 import React from "react";
+import styled from "styled-components";
 import {
   HomeLanding,
   GetToKnowMe,
   Acronym,
   PoetrySection,
   ToCome,
+  ParallaxSection,
 } from "../components";
 
 export default () => (
-  <div>
+  <MainContainer>
     <HomeLanding />
     <GetToKnowMe />
     <Acronym />
-    <ToCome />
+    <ParallaxSection />
     {/* <PoetrySection /> */}
-  </div>
+  </MainContainer>
 );
+
+const MainContainer = styled.div`
+  position: relative;
+`;
